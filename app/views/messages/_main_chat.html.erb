@@ -1,6 +1,6 @@
 <div class="chat-header">
   <div class="groups">
-    Ongeki-Shooters
+    <%= @room.name %>
   </div>
   <div class="chat-end">
     <a href="#">チャットを終了する</a>
@@ -8,36 +8,6 @@
 </div>
 
 <div class="messages">
-  <%# <div class="content">
-    <div class="first-content">
-      <div class="name">
-         Aoi_Misumi
-      </div>
-      <div class="timestomp">
-        2020.09.24(Wed) 15:57:13
-      </div>
-    </div>
-    <div class="second-cotent">
-      <div class="text">
-        オンゲキR.E.D 2020年9月30日・稼働開始
-      </div>
-    </div>
-  </div>
-  <div class="content">
-    <div class="first-content">
-      <div class="name">
-      Akari_Hoshizaki
-      </div>
-      <div class="timestomp">
-        2020.09.24(Wed) 15:59:44
-      </div>
-    </div>
-    <div class="second-cotent">
-      <div class="text">
-        私たちは…負けない!
-      </div>
-    </div>
-  </div> %>
   <%= render partial: 'message',collection: @messages %>
 </div>
 
